@@ -40,7 +40,7 @@ const logger = new (winston.Logger)({
         new (winston.transports.File)({
             filename: `./log/${new Date().Format("yyyy_MM_dd_hh_mm_ss")}.log`,
             timestamp: 'true',
-            maxsize: 10485760, //日志文件的大小
+            // maxsize: 1048576000, //日志文件的大小
             maxFiles: 10
         })
     ]
